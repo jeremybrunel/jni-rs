@@ -1,8 +1,13 @@
+
 public class Benchmark {
 
     public static void main(String[] args) {
         
-       System.out.println("Benchmark !");
-        
+        CsvSearchBenchmark csvBearchBench = new CsvSearchBenchmark();
+        try{
+            csvBearchBench.run();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

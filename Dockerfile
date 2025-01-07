@@ -12,6 +12,9 @@ RUN apt-get update && \
 # Copy all local files into the container
 COPY . /app
 
+# Create build directory
+RUN mkdir -p build
+
 # Build steps:
 # 1) Build Rust JNI library
 # 2) Build Java code

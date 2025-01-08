@@ -1,3 +1,4 @@
 *.class
 *.zip
-rustLib/target
+rustLibs/*/target/
+javaLibTool/build

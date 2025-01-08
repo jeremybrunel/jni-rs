@@ -1,0 +1,9 @@
+# Build the Java tool and the Rust lib
+./build_tool_jar.sh
+
+# Launch the tool
+cd javaLibTool
+java -Djava.library.path=../rustLibs/performLib/target/release -jar build/MyTask.jar relative_path_to_lib encoded_json_argument
+
+ex:
+    java -Djava.library.path=../rustLibs/performLib/target/release -jar build/MyTask.jar ../rustLibs/performLib/target/release/libperform.so eyJrZXkiOiJ2YWx1ZSJ9
